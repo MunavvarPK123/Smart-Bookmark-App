@@ -50,3 +50,14 @@ Open http://localhost:3000 in your browser.
 5. Deploy
 
 Deployed on Vercel using the live URL above.
+
+# Challenges Faced & Solutions
+
+1. Google login redirected to localhost after deployment
+   - Solution: Added the Vercel URL to Supabase Auth → Redirect URLs.
+
+2. Real-time updates on mobile tabs delayed
+   - Solution: Noted that mobile browsers throttle background tabs; updates work instantly in active tabs.
+
+3. Environment variables missing on Vercel deploy
+   - Solution: Added `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in Vercel dashboard → redeployed.
